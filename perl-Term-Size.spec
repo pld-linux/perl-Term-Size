@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Term
-%define	pnam	Size
+%define		pdir	Term
+%define		pnam	Size
 Summary:	Term::Size - Perl extension for retrieving terminal size
 Summary(pl):	Term::Size - rozszerzenie Perla do odczytu rozmiaru terminala
 Name:		perl-Term-Size
