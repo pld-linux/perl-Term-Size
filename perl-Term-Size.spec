@@ -6,7 +6,7 @@
 %define		pdir	Term
 %define		pnam	Size
 Summary:	Term::Size - Perl extension for retrieving terminal size
-Summary(pl):	Term::Size - rozszerzenie Perla do odczytu rozmiaru terminala
+Summary(pl.UTF-8):   Term::Size - rozszerzenie Perla do odczytu rozmiaru terminala
 Name:		perl-Term-Size
 Version:	0.2
 Release:	2
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Term::Size is a Perl module which provides a straightforward way to
 retrieve the terminal size.
 
-%description -l pl
-Term::Size to modu≥ Perla dostarczaj±cy bezpo∂redni sposÛb na odczyt
+%description -l pl.UTF-8
+Term::Size to modu≈Ç Perla dostarczajƒÖcy bezpo≈õredni spos√≥b na odczyt
 rozmiaru terminala.
 
 %prep
