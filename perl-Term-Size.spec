@@ -8,13 +8,13 @@
 Summary:	Term::Size - Perl extension for retrieving terminal size
 Summary(pl.UTF-8):	Term::Size - rozszerzenie Perla do odczytu rozmiaru terminala
 Name:		perl-Term-Size
-Version:	0.2
-Release:	4
+Version:	0.207
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Term/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	982b5df8351e7654a42b7bffc0bf1d57
+# Source0-md5:	474438fff3f12fca88a23388cc5a7571
 URL:		http://search.cpan.org/dist/Term-Size/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
