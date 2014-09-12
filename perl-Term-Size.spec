@@ -55,6 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Term/Size.pm
 %dir %{perl_vendorarch}/auto/Term/Size
 %{perl_vendorarch}/auto/Term/Size/autosplit.ix
-%{perl_vendorarch}/auto/Term/Size/Size.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Term/Size/Size.so
 %{_mandir}/man3/*
