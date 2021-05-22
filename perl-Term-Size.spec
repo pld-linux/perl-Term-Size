@@ -7,16 +7,21 @@
 Summary:	Term::Size - Perl extension for retrieving terminal size
 Summary(pl.UTF-8):	Term::Size - rozszerzenie Perla do odczytu rozmiaru terminala
 Name:		perl-Term-Size
-Version:	0.207
-Release:	15
+Version:	0.211
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Term/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	474438fff3f12fca88a23388cc5a7571
-URL:		http://search.cpan.org/dist/Term-Size/
+# Source0-md5:	150b398d5be255883e59e12414c4a0cd
+URL:		https://metacpan.org/release/Term-Size
+BuildRequires:	perl-ExtUtils-MakeMaker
+%if %{with tests}
+BuildRequires:	perl-Test-Simple
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,9 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes Copyright README
+%doc Changes README
 %{perl_vendorarch}/Term/Size.pm
 %dir %{perl_vendorarch}/auto/Term/Size
-%{perl_vendorarch}/auto/Term/Size/autosplit.ix
 %attr(755,root,root) %{perl_vendorarch}/auto/Term/Size/Size.so
 %{_mandir}/man3/Term::Size.3pm*
