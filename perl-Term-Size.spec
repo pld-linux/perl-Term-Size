@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Term
 %define		pnam	Size
@@ -12,9 +12,9 @@ Release:	6
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Term/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Term/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	150b398d5be255883e59e12414c4a0cd
-URL:		https://metacpan.org/release/Term-Size
+URL:		https://metacpan.org/dist/Term-Size
 BuildRequires:	perl-ExtUtils-MakeMaker
 %if %{with tests}
 BuildRequires:	perl-Test-Simple
